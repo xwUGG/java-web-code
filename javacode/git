@@ -1,0 +1,32 @@
+git 原理
+本地文件--加入暂存区--提交本地仓库--提交github仓库
+
+
+git操作
+在当前文件夹处打开git bash
+git inti 在文件夹下建立git的暂存区
+git status 查看当前仓库状态 没加入暂存区的文件是红色的加入后是绿色的
+git add "文件名" 提交文件到暂存区
+git add . 将所有文件加入到暂存区
+git reset "文件名" 取消文件提交到暂存区
+git commit -m "描述语" 提交暂存区代码到本地仓库 -m可以不要
+
+
+关联GitHub仓库
+关联本机密匙
+ssh-keygen -t rsa -C "邮箱" 生成GitHub关联的密匙在.pub文件里 复制在GitHub里
+生成错误可能是已有 或者点yes
+git config --global user.name "用户名"
+git config --global user.email "邮箱"
+GitHub新建仓库 复制ssh链接 https关联需要梯子
+git remote add origin ssh链接  关联GitHub仓库
+ssh -T git@github.com  检查密匙是否可用
+
+
+提交代码到GitHub
+git push -u origin master 推送本地仓库到GitHub仓库
+空仓库要加-u 第二次推送可以不用加
+git pull 更新代码
+git clone ssh链接  克隆GitHub仓库到本地文件夹
+
+
