@@ -4,7 +4,7 @@ git 原理
 
 git操作
 在当前文件夹处打开git bash
-git inti 在文件夹下建立git的暂存区
+git init 在文件夹下建立git的暂存区
 git status 查看当前仓库状态 没加入暂存区的文件是红色的加入后是绿色的
 git add "文件名" 提交文件到暂存区
 git add . 将所有文件加入到暂存区
